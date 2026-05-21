@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alliance to Zero — Net Zero for the Pharma Supply Chain</title>
+  <meta name="description" content="Alliance to Zero is a non-profit membership association facilitating the transition of the pharma and biotech supply chain to net zero emissions, in line with the Paris Climate Agreement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══ -->
+<header class="site-header" id="site-header">
+  <nav class="nav container">
+    <a class="nav__brand" href="#hero">
+      <svg class="nav__logo" width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+        <circle cx="19" cy="19" r="16.5" stroke="#52B788" stroke-width="2.5"/>
+        <path d="M19 27V15" stroke="#52B788" stroke-width="2" stroke-linecap="round"/>
+        <path d="M14 18.5C14 14.2 18.5 11.5 23 13.5C21 17.5 17.5 19.8 14 18.5Z" fill="#52B788" fill-opacity=".4" stroke="#52B788" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav__brand-text">Alliance<span> to Zero</span></span>
+    </a>
+
+    <ul class="nav__links" id="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#members">Members</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact" class="btn btn--sm btn--outline">Contact</a></li>
+    </ul>
+
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero" class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__circle hero__circle--1"></div>
+      <div class="hero__circle hero__circle--2"></div>
+      <div class="hero__circle hero__circle--3"></div>
+    </div>
+    <div class="container hero__content">
+      <div class="hero__badge">
+        <span class="badge badge--outline-light">Non-profit · Founded 2 June 2021 · Burgdorf, Switzerland</span>
+      </div>
+      <h1 class="hero__title">Driving the Pharmaceutical<br>Supply Chain to <em>Net Zero</em></h1>
+      <p class="hero__sub">A membership association of leading pharma and biotech supply chain companies, collaborating to eliminate emissions in line with the Paris Climate Agreement.</p>
+      <div class="hero__actions">
+        <a href="#about" class="btn btn--accent btn--lg">Explore Our Mission</a>
+        <a href="#resources" class="btn btn--ghost btn--lg">Our Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS BAR ═══ -->
+  <div class="stats-bar" aria-label="Key figures">
+    <div class="container stats-bar__inner">
+      <div class="stat"><div class="stat__number">8</div><div class="stat__label">Member Companies</div></div>
+      <div class="stat"><div class="stat__number">2021</div><div class="stat__label">Year Founded</div></div>
+      <div class="stat"><div class="stat__number">5+</div><div class="stat__label">Publications</div></div>
+      <div class="stat"><div class="stat__number">2030</div><div class="stat__label">Net Zero Target</div></div>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section section--light">
+    <div class="container">
+      <div class="two-col">
+        <div class="two-col__text">
+          <div class="section-label">About Us</div>
+          <h2>Collaboration Beyond Company Boundaries</h2>
+          <p>Alliance to Zero is a non-profit membership association for pharma and biotech supply chain companies. We were founded on 2 June 2021 in Burgdorf, Switzerland by eight companies representing key parts of the pharmaceutical supply chain.</p>
+          <p class="mt-4">While there is much discussion in the pharma community about sustainability and climate impact, substantial change among supply chain partners and manufacturers is not happening fast enough to reduce the emissions footprint. <strong>This is what the Alliance to Zero is committed to changing.</strong></p>
+          <p class="mt-4">Our member companies represent component suppliers, machine suppliers, assembly and manufacturing service providers, as well as those involved in primary and secondary packaging through to final device assembly and collection after use.</p>
+          <div class="mt-8">
+            <a href="mailto:info@alliancetozero.com" class="btn btn--primary">Get in Touch</a>
+          </div>
+        </div>
+        <div class="two-col__cards">
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Paris Aligned</h3>
+            <p>Our roadmap aligns with the Paris Climate Agreement's goal of limiting global warming.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </div>
+            <h3>Circular Economy</h3>
+            <p>We champion circular business models and take-back programs to eliminate waste and emissions.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Supply Chain Unity</h3>
+            <p>Deep collaboration across traditional company boundaries is the key to real change.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3>Regulatory Engagement</h3>
+            <p>We engage with regulators, including submitting comments to the EU Circular Economy Act.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ROADMAP ═══ -->
+  <section id="roadmap" class="section section--dark">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <div class="section-label section-label--light">Roadmap</div>
+        <h2>Our Ambitions</h2>
+        <p>A phased journey toward net zero pharmaceutical manufacturing and supply chain.</p>
+      </div>
+      <div class="roadmap">
+
+        <div class="roadmap__item roadmap__item--achieved">
+          <div class="roadmap__marker"><div class="roadmap__dot"></div></div>
+          <div class="roadmap__card">
+            <div class="roadmap__meta">
+              <span class="roadmap__year">2023</span>
+              <span class="roadmap__status roadmap__status--achieved">Achieved</span>
+            </div>
+            <h3>Awareness &amp; Network</h3>
+            <p>Raised awareness and created a strong industry network. Specific programs to reduce GHG emissions — including waste reduction in injection devices — established within member companies. The full supply chain of injection devices is now represented by the Alliance.</p>
+          </div>
+        </div>
+
+        <div class="roadmap__item roadmap__item--active">
+          <div class="roadmap__marker"><div class="roadmap__dot"></div></div>
+          <div class="roadmap__card">
+            <div class="roadmap__meta">
+              <span class="roadmap__year">2026</span>
+              <span class="roadmap__status roadmap__status--active">In Progress</span>
+            </div>
+            <h3>Business Model Innovation</h3>
+            <p>Business models collaboratively developed based on GHG emissions reduction and Circular Economy principles. Multiple supply chain solutions to significantly decarbonise injection devices, usable across a wide variety of existing and future devices.</p>
+          </div>
+        </div>
+
+        <div class="roadmap__item roadmap__item--future">
+          <div class="roadmap__marker"><div class="roadmap__dot"></div></div>
+          <div class="roadmap__card">
+            <div class="roadmap__meta">
+              <span class="roadmap__year">2030</span>
+              <span class="roadmap__status roadmap__status--future">Target</span>
+            </div>
+            <h3>Net Zero Launch</h3>
+            <p>Member company operations covering the supply chain of the net zero product offering will be net zero or show significant GHG emissions reduction. Alliance solutions will have contributed to the launch of the first generation of net zero injection devices.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MEMBERS ═══ -->
+  <section id="members" class="section section--white">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <div class="section-label">Members</div>
+        <h2>Our Member Companies</h2>
+        <p>Eight leading companies across the pharmaceutical supply chain, united in their commitment to net zero emissions.</p>
+      </div>
+      <div class="members-grid">
+
+        <article class="member-card">
+          <div class="member-card__header">
+            <div class="member-card__name">SCHOTT</div>
+            <div class="member-card__tag">Primary Packaging</div>
+          </div>
+          <p>Global leading manufacturer in primary pharmaceutical packaging, producing more than 11 billion vials, ampoules, cartridges and syringes annually. Represented in 34 countries with 16,500 employees.</p>
+          <a href="https://www.schott.com/en-gb/markets/health/pharma" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+        </article>
+
+        <article class="member-card">
+          <div class="member-card__header">
+            <div class="member-card__name">Körber</div>
+            <div class="member-card__tag">Secondary Packaging</div>
+          </div>
+          <p>Offers innovative, high-quality and sustainable pharma packaging solutions. Körber's Rondo and Dividella solutions for monomaterial packaging set global standards for secondary packaging.</p>
+          <a href="https://www.koerber.com" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+        </article>
+
+        <article class="member-card">
+          <div class="member-card__header">
+            <div class="member-card__name">Harro Höfliger</div>
+            <div class="member-card__tag">Filling &amp; Assembly</div>
+          </div>
+          <p>Offers expertise in filling, assembly and packaging lines, accompanying customers from laboratory stage to full production.</p>
+          <a href="https://www.hoefliger.com" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+        </article>
+
+        <article class="member-card">
+          <div class="member-card__header">
+            <div class="member-card__name">Sharp</div>
+            <div class="member-card__tag">Packaging &amp; Services</div>
+          </div>
+          <p>A leader in pharmaceutical packaging and clinical trial supply services with a heritage spanning more than 70 years. Particular expertise in secondary packaging of injectables.</p>
+          <a href="https://www.sharpservices.com" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+        </article>
+
+        <article class="member-card">
+          <div class="member-card__header">
+            <div class="member-card__name">Datwyler</div>
+            <div class="member-card__tag">Elastomer Components</div>
+          </div>
+          <p>Focuses on high-quality, system-critical elastomer components with leading positions in healthcare. More than 20 operating companies, sales in over 100 countries, 6,700+ employees. Headquartered in Switzerland.</p>
+          <a href="https://www.datwyler.com" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+        </article>
+
+        <article class="member-card">
+          <div class="member-card__header">
+            <div class="member-card__name">Schreiner MediPharm</div>
+            <div class="member-card__tag">Specialty Labels</div>
+          </div>
+          <p>Leading developer and manufacturer of innovative, multifunctional specialty labels and marking solutions for the healthcare industry, based near Munich, Germany.</p>
+          <a href="https://www.schreiner-medipharm.com" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+        </article>
+
+        <article class="member-card">
+          <div class="member-card__header">
+            <div class="member-card__name">Ypsomed</div>
+            <div class="member-card__tag">Injection Systems</div>
+          </div>
+          <p>Leading developer and manufacturer of injection and infusion systems for self-medication, with over 35 years' experience. Preferred partner for pharma and biotech companies. Headquartered in Burgdorf, Switzerland.</p>
+          <a href="https://www.ypsomed.com" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+        </article>
+
+        <article class="member-card member-card--new">
+          <div class="member-card__header">
+            <div class="member-card__name">Resourcify</div>
+            <div class="member-card__tag">Circular Economy</div>
+          </div>
+          <span class="badge badge--new">New Member · June 2025</span>
+          <p>The circular operating system. Strong background in Circular Economy, driving development of take-back and recycling programs across Europe and the USA. Co-founded by Felix Heinricy, Managing Director.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ QUOTE ═══ -->
+  <section class="quote-section" aria-label="Featured quote">
+    <div class="container">
+      <blockquote class="featured-quote">
+        <p>"Creating a substantial impact on the carbon footprint of the pharmaceutical industry requires thinking beyond company-specific responsibility definitions. And this is what the alliance is about."</p>
+        <footer>
+          <strong>Dr. Arne Kloke</strong>
+          <span>President, Alliance to Zero · SCHOTT Pharma</span>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ═══ RESOURCES ═══ -->
+  <section id="resources" class="section section--light">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Publications</div>
+        <h2>Working Group Outputs</h2>
+        <p>Research, guidelines, and innovations from our cross-company working groups.</p>
+      </div>
+      <div class="resources-grid">
+
+        <article class="resource-card">
+          <div class="resource-card__meta">
+            <span class="badge badge--type">Whitepaper</span>
+            <span class="resource-card__date">July 2025</span>
+          </div>
+          <h3>Sustainable Plastics</h3>
+          <p>Alternatives to fossil-based plastics for the production of medical devices, with a focus on decarbonization pathways for the pharmaceutical industry.</p>
+          <a href="#" class="resource-card__link">Download PDF →</a>
+        </article>
+
+        <article class="resource-card resource-card--highlight">
+          <div class="resource-card__meta">
+            <span class="badge badge--type">Innovation</span>
+            <span class="resource-card__date">June 2025</span>
+          </div>
+          <h3>Secure Blister-Free Syringe (SBFS)</h3>
+          <p>Lean, Green &amp; Secure: A regulatory-ready, blister-free syringe solution ensuring safe and efficient drug delivery while minimising carbon emissions.</p>
+          <a href="#" class="resource-card__link">Download PDF →</a>
+        </article>
+
+        <article class="resource-card">
+          <div class="resource-card__meta">
+            <span class="badge badge--type">Framework</span>
+            <span class="resource-card__date">April 2025</span>
+          </div>
+          <h3>Ecodesign Principles</h3>
+          <p>11 Ecodesign principles for an automated disposable injector device, collaboratively identified by member companies to improve Product Carbon Footprint (PCF).</p>
+          <a href="#" class="resource-card__link">Download PDF →</a>
+        </article>
+
+        <article class="resource-card">
+          <div class="resource-card__meta">
+            <span class="badge badge--type">Report</span>
+            <span class="resource-card__date">July 2024</span>
+          </div>
+          <h3>Net Zero Requires Circularity</h3>
+          <p>Supply chain collaboration overview, the shared Product Carbon Footprint Guideline, pilot PCF study of a self-injection device, and the case for circular economy transition.</p>
+          <a href="#" class="resource-card__link">Download PDF →</a>
+        </article>
+
+        <article class="resource-card">
+          <div class="resource-card__meta">
+            <span class="badge badge--type">Guideline</span>
+            <span class="resource-card__date">July 2024</span>
+          </div>
+          <h3>PCF Guideline</h3>
+          <p>A methodological guideline for the product carbon footprint (PCF) assessment of automated disposable injection devices.</p>
+          <a href="#" class="resource-card__link">Download PDF →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NEWS ═══ -->
+  <section id="news" class="section section--white">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">News</div>
+        <h2>Latest Updates</h2>
+      </div>
+      <div class="news-list" role="list">
+
+        <article class="news-item" role="listitem">
+          <div class="news-item__date">Oct 2025</div>
+          <div class="news-item__content">
+            <h3>Driving Sustainability Together: Alliance to Zero &amp; CPHI</h3>
+            <p>Collaboration with CPHI as the pharmaceutical industry stands at a pivotal moment in its journey toward sustainability.</p>
+          </div>
+        </article>
+
+        <article class="news-item" role="listitem">
+          <div class="news-item__date">Jun 2025</div>
+          <div class="news-item__content">
+            <h3>Resourcify Joins the Alliance</h3>
+            <p>Alliance to Zero expands its membership to welcome Resourcify, the circular operating system, bringing expertise in take-back and recycling programs across Europe and the USA.</p>
+          </div>
+        </article>
+
+        <article class="news-item" role="listitem">
+          <div class="news-item__date">Jan 2025</div>
+          <div class="news-item__content">
+            <h3>Spotlight on Blister-Free Syringe Packaging</h3>
+            <p>Preparing for Pharmapack Paris with a spotlight on the blister-free syringe packaging working group's latest developments.</p>
+          </div>
+        </article>
+
+        <article class="news-item" role="listitem">
+          <div class="news-item__date">Oct 2024</div>
+          <div class="news-item__content">
+            <h3>CPHI Milan — Sustainability Workshop</h3>
+            <p>Collaboration with Informa at CPHI Milan, featuring a workshop on sustainability contribution and supply chain transformation.</p>
+          </div>
+        </article>
+
+        <article class="news-item" role="listitem">
+          <div class="news-item__date">Nov 2023</div>
+          <div class="news-item__content">
+            <h3>Regulatory Survey on Single-Use Medical Devices</h3>
+            <p>Survey launched to gather industry views on regulatory challenges to the decarbonisation of single-use medical devices.</p>
+          </div>
+        </article>
+
+        <article class="news-item" role="listitem">
+          <div class="news-item__date">Jun 2021</div>
+          <div class="news-item__content">
+            <h3>Alliance to Zero Founded</h3>
+            <p>Eight leading pharmaceutical supply chain companies founded the Alliance to Zero in Burgdorf, Switzerland, committing to drive the sector to net zero emissions.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA / CONTACT ═══ -->
+  <section id="contact" class="section section--primary">
+    <div class="container">
+      <div class="cta">
+        <div class="section-label section-label--light">Join Us</div>
+        <h2>Become Part of the Solution</h2>
+        <p>We invite companies across the pharmaceutical supply chain to join us in this urgent journey. Together, we can transform operations, products, logistics and investments to achieve real and lasting change.</p>
+        <div class="cta__actions">
+          <a href="mailto:info@alliancetozero.com" class="btn btn--accent btn--lg">Contact Us</a>
+          <a href="#resources" class="btn btn--ghost btn--lg">Download Manifesto</a>
+        </div>
+        <div class="cta__info">
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@alliancetozero.com
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Burgdorf, Switzerland
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <div class="footer__logo-wrap">
+        <svg width="32" height="32" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+          <circle cx="19" cy="19" r="16.5" stroke="#52B788" stroke-width="2.5"/>
+          <path d="M19 27V15" stroke="#52B788" stroke-width="2" stroke-linecap="round"/>
+          <path d="M14 18.5C14 14.2 18.5 11.5 23 13.5C21 17.5 17.5 19.8 14 18.5Z" fill="#52B788" fill-opacity=".4" stroke="#52B788" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        <span class="footer__logo-text">Alliance to Zero</span>
+      </div>
+      <p>Non-profit membership association facilitating the transition of the pharmaceutical and biotech supply chain to net zero emissions, in line with the Paris Climate Agreement.</p>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/company/alliance-to-zero" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://twitter.com/AlliancetoZero" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <div class="footer__col">
+        <h4>Organisation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#members">Members</a></li>
+          <li><a href="#contact">Join Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#resources">Publications</a></li>
+          <li><a href="#resources">PCF Guideline</a></li>
+          <li><a href="#resources">Manifesto</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@alliancetozero.com">info@alliancetozero.com</a></li>
+          <li><span>Burgdorf, Switzerland</span></li>
+          <li><a href="https://www.linkedin.com/company/alliance-to-zero" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://twitter.com/AlliancetoZero" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <p>&copy; 2025 Alliance to Zero. Non-profit association founded 2 June 2021, Burgdorf, Switzerland.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
