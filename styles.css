@@ -240,7 +240,7 @@ p  { color: var(--gray-600); line-height: 1.75; }
   z-index: 2;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: 400px 1fr;
   gap: 4rem;
   align-items: center;
 }
@@ -682,7 +682,7 @@ p  { color: var(--gray-600); line-height: 1.75; }
   .logos-grid     { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 1000px) {
-  .hero__content { grid-template-columns: 1fr 320px; gap: 2.5rem; }
+  .hero__content { grid-template-columns: 320px 1fr; gap: 2.5rem; }
 }
 @media (max-width: 900px) {
   .hero__content { grid-template-columns: 1fr; }
