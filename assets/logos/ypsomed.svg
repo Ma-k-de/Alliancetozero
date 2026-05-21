@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 36">
+  <!-- Small green leaf/triangle mark -->
+  <polygon points="4,28 12,10 20,28" fill="#3DAA6B" opacity="0.85"/>
+  <polygon points="8,28 12,18 16,28" fill="white"/>
+  <!-- YPSOMED bold dark wordmark -->
+  <text x="26" y="18" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#1A1A1A" letter-spacing="0.5">YPSOMED</text>
+  <!-- SELF-CARE SOLUTIONS in green, smaller -->
+  <text x="26" y="30" font-family="Arial, Helvetica, sans-serif" font-size="7.5" font-weight="600" fill="#3DAA6B" letter-spacing="1.2">SELF-CARE SOLUTIONS</text>
+</svg>

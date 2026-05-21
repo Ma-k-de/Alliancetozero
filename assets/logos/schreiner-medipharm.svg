@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 36">
+  <!-- Red angular arrow/chevron mark (Schreiner style) -->
+  <path d="M4 6H16L24 18L16 30H4L12 18Z" fill="#CC0000"/>
+  <!-- schreiner in lowercase red -->
+  <text x="32" y="15" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#CC0000">schreiner</text>
+  <!-- MediPharm in dark grey -->
+  <text x="32" y="30" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="#444444">MediPharm</text>
+</svg>
