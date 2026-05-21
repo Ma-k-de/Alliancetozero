@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alliance to Zero — Net Zero for the Pharma Supply Chain</title>
-  <meta name="description" content="Alliance to Zero is a non-profit membership association facilitating the transition of the pharma and biotech supply chain to net zero emissions, in line with the Paris Climate Agreement.">
+  <meta name="description" content="Alliance to Zero is a non-profit membership association facilitating the transition of the pharmaceutical and biotech supply chain to net zero emissions, in line with the Paris Climate Agreement.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,18 +15,33 @@
 <!-- ═══ NAVIGATION ═══ -->
 <header class="site-header" id="site-header">
   <nav class="nav container">
-    <a class="nav__brand" href="#hero">
-      <svg class="nav__logo" width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
-        <circle cx="19" cy="19" r="16.5" stroke="#52B788" stroke-width="2.5"/>
-        <path d="M19 27V15" stroke="#52B788" stroke-width="2" stroke-linecap="round"/>
-        <path d="M14 18.5C14 14.2 18.5 11.5 23 13.5C21 17.5 17.5 19.8 14 18.5Z" fill="#52B788" fill-opacity=".4" stroke="#52B788" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Logo — slightly more minimal AZ mark with two-colour wordmark -->
+    <a class="nav__brand" href="#hero" aria-label="Alliance to Zero — home">
+      <svg width="160" height="40" viewBox="0 0 160 40" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="azGrad" x1="0" y1="0" x2="50" y2="40" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#0D8A7D"/>
+            <stop offset="100%" stop-color="#52B280"/>
+          </linearGradient>
+        </defs>
+        <!-- A mark (geometric, clean) -->
+        <path d="M4 36L16 5L28 36" stroke="url(#azGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="9.5" y1="25" x2="22.5" y2="25" stroke="url(#azGrad)" stroke-width="3" stroke-linecap="round"/>
+        <!-- Z mark (geometric, clean) -->
+        <path d="M33 5H49L33 36H49" stroke="url(#azGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Divider -->
+        <line x1="58" y1="9" x2="58" y2="31" stroke="#E5E7EB" stroke-width="1"/>
+        <!-- Wordmark -->
+        <text x="66" y="20" font-family="Inter,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#0D5046" letter-spacing="-0.3">Alliance</text>
+        <text x="66" y="35" font-family="Inter,-apple-system,sans-serif" font-size="12.5" font-weight="700" fill="#009B8D" letter-spacing="-0.3">to Zero</text>
       </svg>
-      <span class="nav__brand-text">Alliance<span> to Zero</span></span>
     </a>
 
     <ul class="nav__links" id="nav-links" role="list">
       <li><a href="#about">About</a></li>
       <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#governance">Governance</a></li>
       <li><a href="#members">Members</a></li>
       <li><a href="#resources">Resources</a></li>
       <li><a href="#news">News</a></li>
@@ -43,6 +58,10 @@
 
   <!-- ═══ HERO ═══ -->
   <section id="hero" class="hero">
+    <!-- Background photo — place a high-res pharma/sustainability image at assets/hero.jpg -->
+    <!-- Suggested: aerial view of a sustainable manufacturing facility, circular packaging,
+         or abstract pharmaceutical production imagery (e.g. glass vials on a green background) -->
+    <img class="hero__bg-img" src="assets/hero.jpg" alt="" aria-hidden="true" onerror="this.style.display='none'">
     <div class="hero__bg" aria-hidden="true">
       <div class="hero__circle hero__circle--1"></div>
       <div class="hero__circle hero__circle--2"></div>
@@ -56,7 +75,7 @@
       <p class="hero__sub">A membership association of leading pharma and biotech supply chain companies, collaborating to eliminate emissions in line with the Paris Climate Agreement.</p>
       <div class="hero__actions">
         <a href="#about" class="btn btn--accent btn--lg">Explore Our Mission</a>
-        <a href="#resources" class="btn btn--ghost btn--lg">Our Publications</a>
+        <a href="#resources" class="btn btn--outline-teal btn--lg">Our Publications</a>
       </div>
     </div>
   </section>
@@ -71,6 +90,58 @@
     </div>
   </div>
 
+  <!-- ═══ COMPANY LOGOS STRIP ═══ -->
+  <!-- Place actual logo files in assets/logos/ (PNG or SVG, ideally SVG) -->
+  <section class="logos-section" aria-label="Member companies">
+    <div class="container">
+      <p class="logos-eyebrow">Founding members of the Alliance to Zero</p>
+      <div class="logos-grid">
+
+        <div class="logo-item">
+          <img src="assets/logos/resourcify.svg" alt="Resourcify"
+               onerror="logoError(this)">
+          <span class="logo-item__fallback">Resourcify</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/logos/sharp.svg" alt="Sharp"
+               onerror="logoError(this)">
+          <span class="logo-item__fallback">Sharp</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/logos/harro-hoefliger.svg" alt="Harro Höfliger"
+               onerror="logoError(this)">
+          <span class="logo-item__fallback">Harro Höfliger</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/logos/schreiner-medipharm.svg" alt="Schreiner MediPharm"
+               onerror="logoError(this)">
+          <span class="logo-item__fallback">Schreiner MediPharm</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/logos/koerber.svg" alt="Körber"
+               onerror="logoError(this)">
+          <span class="logo-item__fallback">Körber</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/logos/schott.svg" alt="SCHOTT Pharma"
+               onerror="logoError(this)">
+          <span class="logo-item__fallback">SCHOTT</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/logos/datwyler.svg" alt="Datwyler"
+               onerror="logoError(this)">
+          <span class="logo-item__fallback">Datwyler</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/logos/ypsomed.svg" alt="Ypsomed"
+               onerror="logoError(this)">
+          <span class="logo-item__fallback">Ypsomed</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ ABOUT ═══ -->
   <section id="about" class="section section--light">
     <div class="container">
@@ -78,8 +149,8 @@
         <div class="two-col__text">
           <div class="section-label">About Us</div>
           <h2>Collaboration Beyond Company Boundaries</h2>
-          <p>Alliance to Zero is a non-profit membership association for pharma and biotech supply chain companies. We were founded on 2 June 2021 in Burgdorf, Switzerland by eight companies representing key parts of the pharmaceutical supply chain.</p>
-          <p class="mt-4">While there is much discussion in the pharma community about sustainability and climate impact, substantial change among supply chain partners and manufacturers is not happening fast enough to reduce the emissions footprint. <strong>This is what the Alliance to Zero is committed to changing.</strong></p>
+          <p>Alliance to Zero is a non-profit membership association for pharma and biotech supply chain companies. Founded on 2 June 2021 in Burgdorf, Switzerland by eight companies representing key parts of the pharmaceutical supply chain.</p>
+          <p class="mt-4">While there is much discussion in the pharma community about sustainability and climate impact, substantial change is not happening fast enough. <strong>This is what the Alliance to Zero is committed to changing.</strong></p>
           <p class="mt-4">Our member companies represent component suppliers, machine suppliers, assembly and manufacturing service providers, as well as those involved in primary and secondary packaging through to final device assembly and collection after use.</p>
           <div class="mt-8">
             <a href="mailto:info@alliancetozero.com" class="btn btn--primary">Get in Touch</a>
@@ -137,7 +208,7 @@
               <span class="roadmap__status roadmap__status--achieved">Achieved</span>
             </div>
             <h3>Awareness &amp; Network</h3>
-            <p>Raised awareness and created a strong industry network. Specific programs to reduce GHG emissions — including waste reduction in injection devices — established within member companies. The full supply chain of injection devices is now represented by the Alliance.</p>
+            <p>Raised awareness and created a strong industry network. Specific programs to reduce GHG emissions — including waste reduction in injection devices — established within member companies. The full supply chain of injection devices now represented by the Alliance.</p>
           </div>
         </div>
 
@@ -169,6 +240,109 @@
     </div>
   </section>
 
+  <!-- ═══ GOVERNANCE / TEAM ═══ -->
+  <!-- Place headshots in assets/team/ e.g. assets/team/arne-kloke.jpg (square, min 200×200px) -->
+  <section id="governance" class="section section--gray">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <div class="section-label">Leadership</div>
+        <h2>Founding Companies of the Alliance</h2>
+        <p>The representatives of our member companies driving the transition of the pharmaceutical supply chain to net zero.</p>
+      </div>
+      <div class="governance-grid">
+
+        <div class="person-card">
+          <div class="person-card__photo-wrap">
+            <img src="assets/team/arne-kloke.jpg" alt="Dr. Arne Kloke"
+                 onerror="avatarError(this)">
+            <div class="person-card__initials">AK</div>
+          </div>
+          <div class="person-card__name">Dr. Arne Kloke</div>
+          <div class="person-card__company">SCHOTT Pharma</div>
+          <span class="person-card__role person-card__role--president">President</span>
+        </div>
+
+        <div class="person-card">
+          <div class="person-card__photo-wrap">
+            <img src="assets/team/marwin-krull.jpg" alt="Marwin Krull"
+                 onerror="avatarError(this)">
+            <div class="person-card__initials">MK</div>
+          </div>
+          <div class="person-card__name">Marwin Krull</div>
+          <div class="person-card__company">Körber Pharma</div>
+          <span class="person-card__role person-card__role--vp">Vice President</span>
+        </div>
+
+        <div class="person-card">
+          <div class="person-card__photo-wrap">
+            <img src="assets/team/fritz-major.jpg" alt="Fritz Major"
+                 onerror="avatarError(this)">
+            <div class="person-card__initials">FM</div>
+          </div>
+          <div class="person-card__name">Fritz Major</div>
+          <div class="person-card__company">Harro Höfliger</div>
+          <span class="person-card__role person-card__role--treasurer">Treasurer</span>
+        </div>
+
+        <div class="person-card">
+          <div class="person-card__photo-wrap">
+            <img src="assets/team/hywel-woolf.jpg" alt="Hywel Woolf"
+                 onerror="avatarError(this)">
+            <div class="person-card__initials">HW</div>
+          </div>
+          <div class="person-card__name">Hywel Woolf</div>
+          <div class="person-card__company">Sharp</div>
+          <span class="person-card__role">Committee Member</span>
+        </div>
+
+        <div class="person-card">
+          <div class="person-card__photo-wrap">
+            <img src="assets/team/koen-maes.jpg" alt="Koen Maes"
+                 onerror="avatarError(this)">
+            <div class="person-card__initials">KM</div>
+          </div>
+          <div class="person-card__name">Koen Maes</div>
+          <div class="person-card__company">Datwyler</div>
+          <span class="person-card__role">Committee Member</span>
+        </div>
+
+        <div class="person-card">
+          <div class="person-card__photo-wrap">
+            <img src="assets/team/felix-heinricy.jpg" alt="Felix Heinricy"
+                 onerror="avatarError(this)">
+            <div class="person-card__initials">FH</div>
+          </div>
+          <div class="person-card__name">Felix Heinricy</div>
+          <div class="person-card__company">Resourcify</div>
+          <span class="person-card__role">Committee Member</span>
+        </div>
+
+        <div class="person-card">
+          <div class="person-card__photo-wrap">
+            <img src="assets/team/kurt-kugler.jpg" alt="Dr.-Ing. Kurt Kugler"
+                 onerror="avatarError(this)">
+            <div class="person-card__initials">KK</div>
+          </div>
+          <div class="person-card__name">Dr.-Ing. Kurt Kugler</div>
+          <div class="person-card__company">Schreiner MediPharm</div>
+          <span class="person-card__role">Committee Member</span>
+        </div>
+
+        <div class="person-card">
+          <div class="person-card__photo-wrap">
+            <img src="assets/team/sabine-huber.jpg" alt="Sabine Huber"
+                 onerror="avatarError(this)">
+            <div class="person-card__initials">SH</div>
+          </div>
+          <div class="person-card__name">Sabine Huber</div>
+          <div class="person-card__company">Ypsomed</div>
+          <span class="person-card__role">Committee Member</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ MEMBERS ═══ -->
   <section id="members" class="section section--white">
     <div class="container">
@@ -193,7 +367,7 @@
             <div class="member-card__name">Körber</div>
             <div class="member-card__tag">Secondary Packaging</div>
           </div>
-          <p>Offers innovative, high-quality and sustainable pharma packaging solutions. Körber's Rondo and Dividella solutions for monomaterial packaging set global standards for secondary packaging.</p>
+          <p>Offers innovative, high-quality and sustainable pharma packaging solutions. Rondo and Dividella monomaterial packaging solutions set global standards for secondary packaging.</p>
           <a href="https://www.koerber.com" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
         </article>
 
@@ -249,6 +423,7 @@
           </div>
           <span class="badge badge--new">New Member · June 2025</span>
           <p>The circular operating system. Strong background in Circular Economy, driving development of take-back and recycling programs across Europe and the USA. Co-founded by Felix Heinricy, Managing Director.</p>
+          <a href="https://www.resourcify.com/de" class="member-card__link" target="_blank" rel="noopener noreferrer">Visit Website →</a>
         </article>
 
       </div>
@@ -268,13 +443,14 @@
     </div>
   </section>
 
-  <!-- ═══ RESOURCES ═══ -->
+  <!-- ═══ RESOURCES (gated downloads) ═══ -->
+  <!-- Place PDF files in assets/pdfs/ e.g. assets/pdfs/sustainable-plastics.pdf -->
   <section id="resources" class="section section--light">
     <div class="container">
       <div class="section-header">
         <div class="section-label">Publications</div>
         <h2>Working Group Outputs</h2>
-        <p>Research, guidelines, and innovations from our cross-company working groups.</p>
+        <p>Research, guidelines, and innovations from our cross-company working groups. Share your contact details to access each publication.</p>
       </div>
       <div class="resources-grid">
 
@@ -285,7 +461,12 @@
           </div>
           <h3>Sustainable Plastics</h3>
           <p>Alternatives to fossil-based plastics for the production of medical devices, with a focus on decarbonization pathways for the pharmaceutical industry.</p>
-          <a href="#" class="resource-card__link">Download PDF →</a>
+          <button class="resource-card__link js-download-trigger"
+                  data-title="Sustainable Plastics"
+                  data-url="assets/pdfs/sustainable-plastics.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </button>
         </article>
 
         <article class="resource-card resource-card--highlight">
@@ -295,7 +476,12 @@
           </div>
           <h3>Secure Blister-Free Syringe (SBFS)</h3>
           <p>Lean, Green &amp; Secure: A regulatory-ready, blister-free syringe solution ensuring safe and efficient drug delivery while minimising carbon emissions.</p>
-          <a href="#" class="resource-card__link">Download PDF →</a>
+          <button class="resource-card__link js-download-trigger"
+                  data-title="Secure Blister-Free Syringe (SBFS)"
+                  data-url="assets/pdfs/sbfs.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </button>
         </article>
 
         <article class="resource-card">
@@ -305,7 +491,12 @@
           </div>
           <h3>Ecodesign Principles</h3>
           <p>11 Ecodesign principles for an automated disposable injector device, collaboratively identified by member companies to improve Product Carbon Footprint (PCF).</p>
-          <a href="#" class="resource-card__link">Download PDF →</a>
+          <button class="resource-card__link js-download-trigger"
+                  data-title="Ecodesign Principles"
+                  data-url="assets/pdfs/ecodesign-principles.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </button>
         </article>
 
         <article class="resource-card">
@@ -314,8 +505,13 @@
             <span class="resource-card__date">July 2024</span>
           </div>
           <h3>Net Zero Requires Circularity</h3>
-          <p>Supply chain collaboration overview, the shared Product Carbon Footprint Guideline, pilot PCF study of a self-injection device, and the case for circular economy transition.</p>
-          <a href="#" class="resource-card__link">Download PDF →</a>
+          <p>Supply chain collaboration overview, shared PCF Guideline, pilot carbon footprint study of a self-injection device, and the case for circular economy transition.</p>
+          <button class="resource-card__link js-download-trigger"
+                  data-title="Net Zero Requires Circularity"
+                  data-url="assets/pdfs/net-zero-requires-circularity.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </button>
         </article>
 
         <article class="resource-card">
@@ -325,7 +521,12 @@
           </div>
           <h3>PCF Guideline</h3>
           <p>A methodological guideline for the product carbon footprint (PCF) assessment of automated disposable injection devices.</p>
-          <a href="#" class="resource-card__link">Download PDF →</a>
+          <button class="resource-card__link js-download-trigger"
+                  data-title="PCF Guideline"
+                  data-url="assets/pdfs/pcf-guideline.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </button>
         </article>
 
       </div>
@@ -333,57 +534,119 @@
   </section>
 
   <!-- ═══ NEWS ═══ -->
+  <!-- Place news images in assets/news/ e.g. assets/news/cphi-2025.jpg (16:9, min 800px wide) -->
   <section id="news" class="section section--white">
     <div class="container">
       <div class="section-header">
         <div class="section-label">News</div>
         <h2>Latest Updates</h2>
       </div>
-      <div class="news-list" role="list">
+      <div class="news-grid">
 
-        <article class="news-item" role="listitem">
-          <div class="news-item__date">Oct 2025</div>
-          <div class="news-item__content">
+        <article class="news-card nc-1">
+          <div class="news-card__img-wrap">
+            <!-- Suggested image: pharma conference / CPHI floor / sustainability panel -->
+            <svg class="news-card__art" viewBox="0 0 400 180" fill="none" aria-hidden="true">
+              <circle cx="340" cy="90" r="120" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+              <circle cx="340" cy="90" r="70"  stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+              <circle cx="60"  cy="140" r="60" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            </svg>
+            <img src="assets/news/cphi-2025.jpg" alt="" onerror="this.style.display='none'">
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">Oct 2025</div>
             <h3>Driving Sustainability Together: Alliance to Zero &amp; CPHI</h3>
             <p>Collaboration with CPHI as the pharmaceutical industry stands at a pivotal moment in its journey toward sustainability.</p>
           </div>
         </article>
 
-        <article class="news-item" role="listitem">
-          <div class="news-item__date">Jun 2025</div>
-          <div class="news-item__content">
+        <article class="news-card nc-2">
+          <div class="news-card__img-wrap">
+            <!-- Suggested image: recycling/circular economy / green supply chain -->
+            <svg class="news-card__art" viewBox="0 0 400 180" fill="none" aria-hidden="true">
+              <path d="M200 40 A120 120 0 1 1 199 40" stroke="rgba(255,255,255,.35)" stroke-width="1.5" fill="none"/>
+              <circle cx="200" cy="90" r="50" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+              <circle cx="200" cy="90" r="8"  fill="rgba(255,255,255,.4)"/>
+            </svg>
+            <img src="assets/news/resourcify-joins.jpg" alt="" onerror="this.style.display='none'">
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">Jun 2025</div>
             <h3>Resourcify Joins the Alliance</h3>
-            <p>Alliance to Zero expands its membership to welcome Resourcify, the circular operating system, bringing expertise in take-back and recycling programs across Europe and the USA.</p>
+            <p>Alliance to Zero expands its membership to welcome Resourcify, bringing expertise in take-back and recycling programs across Europe and the USA.</p>
           </div>
         </article>
 
-        <article class="news-item" role="listitem">
-          <div class="news-item__date">Jan 2025</div>
-          <div class="news-item__content">
+        <article class="news-card nc-3">
+          <div class="news-card__img-wrap">
+            <!-- Suggested image: syringe / packaging / pharmapack paris -->
+            <svg class="news-card__art" viewBox="0 0 400 180" fill="none" aria-hidden="true">
+              <rect x="170" y="30" width="60" height="120" rx="30" stroke="rgba(255,255,255,.35)" stroke-width="1.5"/>
+              <line x1="200" y1="30" x2="200" y2="150" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+              <circle cx="100" cy="60"  r="40" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+              <circle cx="310" cy="130" r="50" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            </svg>
+            <img src="assets/news/pharmapack-2025.jpg" alt="" onerror="this.style.display='none'">
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">Jan 2025</div>
             <h3>Spotlight on Blister-Free Syringe Packaging</h3>
             <p>Preparing for Pharmapack Paris with a spotlight on the blister-free syringe packaging working group's latest developments.</p>
           </div>
         </article>
 
-        <article class="news-item" role="listitem">
-          <div class="news-item__date">Oct 2024</div>
-          <div class="news-item__content">
+        <article class="news-card nc-4">
+          <div class="news-card__img-wrap">
+            <!-- Suggested image: CPHI Milan / workshop / supply chain event -->
+            <svg class="news-card__art" viewBox="0 0 400 180" fill="none" aria-hidden="true">
+              <line x1="50" y1="90" x2="350" y2="90" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+              <circle cx="50"  cy="90" r="8"  fill="rgba(255,255,255,.4)"/>
+              <circle cx="150" cy="90" r="8"  fill="rgba(255,255,255,.4)"/>
+              <circle cx="250" cy="90" r="8"  fill="rgba(255,255,255,.4)"/>
+              <circle cx="350" cy="90" r="8"  fill="rgba(255,255,255,.4)"/>
+              <circle cx="100" cy="50" r="30" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+              <circle cx="300" cy="130" r="40" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            </svg>
+            <img src="assets/news/cphi-milan-2024.jpg" alt="" onerror="this.style.display='none'">
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">Oct 2024</div>
             <h3>CPHI Milan — Sustainability Workshop</h3>
             <p>Collaboration with Informa at CPHI Milan, featuring a workshop on sustainability contribution and supply chain transformation.</p>
           </div>
         </article>
 
-        <article class="news-item" role="listitem">
-          <div class="news-item__date">Nov 2023</div>
-          <div class="news-item__content">
+        <article class="news-card nc-5">
+          <div class="news-card__img-wrap">
+            <!-- Suggested image: medical device / survey / regulatory -->
+            <svg class="news-card__art" viewBox="0 0 400 180" fill="none" aria-hidden="true">
+              <rect x="120" y="30" width="160" height="120" rx="8" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
+              <line x1="140" y1="70"  x2="260" y2="70"  stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+              <line x1="140" y1="95"  x2="220" y2="95"  stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+              <line x1="140" y1="120" x2="240" y2="120" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            </svg>
+            <img src="assets/news/regulatory-survey-2023.jpg" alt="" onerror="this.style.display='none'">
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">Nov 2023</div>
             <h3>Regulatory Survey on Single-Use Medical Devices</h3>
             <p>Survey launched to gather industry views on regulatory challenges to the decarbonisation of single-use medical devices.</p>
           </div>
         </article>
 
-        <article class="news-item" role="listitem">
-          <div class="news-item__date">Jun 2021</div>
-          <div class="news-item__content">
+        <article class="news-card nc-6">
+          <div class="news-card__img-wrap">
+            <!-- Suggested image: founding ceremony / handshake / Burgdorf Switzerland -->
+            <svg class="news-card__art" viewBox="0 0 400 180" fill="none" aria-hidden="true">
+              <circle cx="200" cy="90" r="100" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+              <circle cx="200" cy="90" r="65"  stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+              <circle cx="200" cy="90" r="30"  stroke="rgba(255,255,255,.35)" stroke-width="1.5"/>
+              <circle cx="200" cy="90" r="6"   fill="rgba(255,255,255,.5)"/>
+            </svg>
+            <img src="assets/news/founding-2021.jpg" alt="" onerror="this.style.display='none'">
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">Jun 2021</div>
             <h3>Alliance to Zero Founded</h3>
             <p>Eight leading pharmaceutical supply chain companies founded the Alliance to Zero in Burgdorf, Switzerland, committing to drive the sector to net zero emissions.</p>
           </div>
@@ -402,7 +665,7 @@
         <p>We invite companies across the pharmaceutical supply chain to join us in this urgent journey. Together, we can transform operations, products, logistics and investments to achieve real and lasting change.</p>
         <div class="cta__actions">
           <a href="mailto:info@alliancetozero.com" class="btn btn--accent btn--lg">Contact Us</a>
-          <a href="#resources" class="btn btn--ghost btn--lg">Download Manifesto</a>
+          <a href="#resources" class="btn btn--outline-teal btn--lg">Download Manifesto</a>
         </div>
         <div class="cta__info">
           <span>
@@ -425,10 +688,16 @@
   <div class="container footer__inner">
     <div class="footer__brand">
       <div class="footer__logo-wrap">
-        <svg width="32" height="32" viewBox="0 0 38 38" fill="none" aria-hidden="true">
-          <circle cx="19" cy="19" r="16.5" stroke="#52B788" stroke-width="2.5"/>
-          <path d="M19 27V15" stroke="#52B788" stroke-width="2" stroke-linecap="round"/>
-          <path d="M14 18.5C14 14.2 18.5 11.5 23 13.5C21 17.5 17.5 19.8 14 18.5Z" fill="#52B788" fill-opacity=".4" stroke="#52B788" stroke-width="1.5" stroke-linejoin="round"/>
+        <svg width="32" height="32" viewBox="0 0 50 50" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="footerGrad" x1="0" y1="0" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0D8A7D"/>
+              <stop offset="100%" stop-color="#52B280"/>
+            </linearGradient>
+          </defs>
+          <path d="M6 44L19 6L32 44" stroke="url(#footerGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="11" y1="31" x2="27" y2="31" stroke="url(#footerGrad)" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M37 6H49L37 44H49" stroke="url(#footerGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span class="footer__logo-text">Alliance to Zero</span>
       </div>
@@ -442,13 +711,13 @@
         </a>
       </div>
     </div>
-
     <nav class="footer__nav" aria-label="Footer navigation">
       <div class="footer__col">
         <h4>Organisation</h4>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#governance">Governance</a></li>
           <li><a href="#members">Members</a></li>
           <li><a href="#contact">Join Us</a></li>
         </ul>
@@ -473,13 +742,62 @@
       </div>
     </nav>
   </div>
-
   <div class="footer__bottom">
     <div class="container">
       <p>&copy; 2025 Alliance to Zero. Non-profit association founded 2 June 2021, Burgdorf, Switzerland.</p>
     </div>
   </div>
 </footer>
+
+<!-- ═══ DOWNLOAD GATE MODAL ═══ -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+  <div class="modal">
+    <button class="modal__close" id="modal-close" aria-label="Close">×</button>
+
+    <!-- Form state -->
+    <div id="modal-form-state">
+      <div class="modal__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+      </div>
+      <h3 class="modal__heading" id="modal-heading">Access This Publication</h3>
+      <p class="modal__resource-name" id="modal-resource-name"></p>
+      <p class="modal__desc">Please share your contact details to download this publication.</p>
+      <form id="gate-form" novalidate>
+        <div class="form-group">
+          <label for="g-name">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="g-name" name="name" required autocomplete="name" placeholder="Jane Smith">
+        </div>
+        <div class="form-group">
+          <label for="g-email">Work Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="g-email" name="email" required autocomplete="email" placeholder="jane@company.com">
+        </div>
+        <div class="form-group">
+          <label for="g-company">Company <span aria-hidden="true">*</span></label>
+          <input type="text" id="g-company" name="company" required autocomplete="organization" placeholder="Your company name">
+        </div>
+        <div class="form-group">
+          <label for="g-role">Job Title</label>
+          <input type="text" id="g-role" name="role" autocomplete="organization-title" placeholder="e.g. Sustainability Manager">
+        </div>
+        <div class="modal__submit">
+          <button type="submit" class="btn btn--primary btn--full">Download Publication →</button>
+        </div>
+        <p class="modal__privacy">We respect your privacy. Your details are used only to provide access to this resource and relevant updates from Alliance to Zero.</p>
+      </form>
+    </div>
+
+    <!-- Success state (hidden until form submitted) -->
+    <div id="modal-success-state" class="modal__success" hidden>
+      <div class="modal__success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3>Your download is ready</h3>
+      <p id="modal-success-desc"></p>
+      <a href="#" id="modal-download-link" class="btn btn--primary btn--full" target="_blank" rel="noopener">Download PDF</a>
+      <button class="btn btn--ghost-dark btn--full" id="modal-success-close">Close</button>
+    </div>
+  </div>
+</div>
 
 <script src="main.js"></script>
 </body>
